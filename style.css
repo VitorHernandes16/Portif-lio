@@ -25,6 +25,12 @@
     
     .text-outline { -webkit-text-stroke: 2px white; }
      .vertical-text { writing-mode: vertical-rl; }
+     
+     .group.active .group-hover\:scale-110 { transform: scale(1.10); }
+.group.active .group-hover\:opacity-100 { opacity: 1; }
+.group.active .group-hover\:scale-100 { transform: scale(1); }
+.group.active .group-hover\:w-full { width: 100%; }
+.group.active .group-hover\:translate-x-4 { transform: translateX(1rem); }
 
         .marquee-wrapper{
         overflow: hidden;

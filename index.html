@@ -116,7 +116,7 @@
 
                 <!-- CARD -->
                 <div class="group">
-                    <div class="relative aspect-[4/5] max-w-md md:max-w-none mx-auto bg-black overflow-hidden border border-white/5 transition-all duration-700 hover:border-white/20">
+                    <div class="relative aspect-[4/5] max-w-md md:max-w-none mx-auto bg-black overflow-hidden border border-white/5 transition-all duration-700 hover:border-white/20 ">
                         <div class="absolute inset-0 flex items-center justify-center">
                             <span class="text-[140px] sm:text-[160px] md:text-[220px] font-black italic select-none transition-all duration-500 text-white/[0.08] group-hover:scale-110">
                                 01
@@ -215,6 +215,23 @@
 
         rotateStacks();
         setInterval(rotateStacks, 1200);
+
+            const cards = document.querySelectorAll('.group');
+
+    function clearActive() {
+        cards.forEach(card => card.classList.remove('active'));
+    }
+
+    cards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            const isActive = card.classList.contains('active');
+            clearActive();
+            if (!isActive) card.classList.add('active');
+            e.stopPropagation();
+        });
+    });
+
+    document.addEventListener('click', clearActive);
     </script>
 
 </body>
