@@ -7,123 +7,138 @@
     <link rel="stylesheet" href="style.css">
     <title>Hernandes.Dev</title>
 </head>
-<body class="bg-black min-h-screen">
+
+<body class="bg-black min-h-screen overflow-x-hidden">
            
     <div id="cursor"></div>
     <div id="cursor-ring"></div>
- 
     <div id="scroll-bar"></div>
 
-        <nav class="fixed top-0 w-full p-6 md:p-10 flex justify-between items-center z-40 mix-blend-difference">
-            <div class="text-xl font-black tracking-tighter text-white">HERNANDES.DEV</div>
-            <ul class="flex gap-8 text-[10px] uppercase tracking-[0.4em] font-bold text-white">
-                <li><a href="#repo" class="hover:line-through transition-all">Repo</a></li>
-                <li><a href="#stacks" class="hover:line-through transition-all">Stack</a></li>
-                <li><a href="#logs" class="hover:line-through transition-all">Logs</a></li>
-            </ul>
-        </nav>
+    <!-- NAV -->
+    <nav class="fixed top-0 w-full px-6 py-5 md:p-10 flex justify-between items-center z-40 mix-blend-difference">
+        <div class="text-lg md:text-xl font-black tracking-tighter text-white">
+            HERNANDES.DEV
+        </div>
+        <ul class="flex gap-5 md:gap-8 text-[9px] md:text-[10px] uppercase tracking-[0.35em] md:tracking-[0.4em] font-bold text-white">
+            <li><a href="#repo" class="hover:line-through transition-all">Repo</a></li>
+            <li><a href="#stacks" class="hover:line-through transition-all">Stack</a></li>
+            <li><a href="#logs" class="hover:line-through transition-all">Logs</a></li>
+        </ul>
+    </nav>
 
-        <section class="relative h-screen flex flex-col justify-center items-center px-6 overflow-hidden">
-            <div class="relative z-10">
-                <h1 class="text-[10vw] text-white leading-[0.8] font-black tracking-tighter uppercase text-center animate-reveal">HERNANDES <br>
-                    <span class="text-outline text-transparent hover:text-white transition-all duration-1000">ENGINEER</span>
-                </h1>
-            </div>
+    <!-- HERO -->
+    <section class="relative min-h-[100svh] flex flex-col justify-center items-center px-6 overflow-hidden">
+        <div class="relative z-10">
+            <h1 class="text-[14vw] sm:text-[12vw] md:text-[10vw] text-white leading-[0.85] md:leading-[0.8] font-black tracking-tighter uppercase text-center animate-reveal">
+                HERNANDES <br>
+                <span class="text-outline text-transparent hover:text-white transition-all duration-1000">
+                    ENGINEER
+                </span>
+            </h1>
+        </div>
 
-            <div class="absolute bottom-12 flex flex-col items-center animate-bounce-slow">
-                <p class="text-[10px] uppercase tracking-[0.5em] mb-4 text-white/40">Construido com precisão</p>
-                <div class="w-px h-16 bg-white/20"></div>
-            </div>
-        </section>
-
-        <section class="stacks py-20 bg-white text-black overflow-hidden relative">
-            <div class="marquee-wrapper border-y border-black">
-                <div class="animate-marquee flex gap-16 whitespace-nowrap">
-                <span class="marquee-text">REACT •</span>
-                <span class="marquee-text">NEXT.JS •</span>
-                <span class="marquee-text">HTML •</span>
-                <span class="marquee-text">CSS •</span>
-                <span class="marquee-text">JAVASCRIPT •</span>
-                <span class="marquee-text">TAILWIND •</span>
-
-                <!-- duplicado pra loop infinito -->
-                <span class="marquee-text">REACT •</span>
-                <span class="marquee-text">NEXT.JS •</span>
-                <span class="marquee-text">HTML •</span>
-                <span class="marquee-text">CSS •</span>
-                <span class="marquee-text">JAVASCRIPT •</span>
-                <span class="marquee-text">TAILWIND •</span>
-                </div>
-            </div>
-            
-            <div class="px-6 mt-40">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
-            <div>
-            <h2 class="text-6xl md:text-8xl text-black font-black uppercase tracking-tighter leading-none mb-10">
-                DEVELOPMENT <br> STACK
-            </h2>
-            <p class="max-w-md text-sm leading-relaxed opacity-60">
-            Focado em transformar layouts complexos em código limpo, rápido e escalável.
-            Minha missão é garantir que cada landing page performe como uma máquina.
+        <div class="absolute bottom-10 md:bottom-12 flex flex-col items-center animate-bounce-slow">
+            <p class="text-[9px] md:text-[10px] uppercase tracking-[0.45em] md:tracking-[0.5em] mb-4 text-white/40 text-center">
+                Construido com precisão
             </p>
-            </div>
+            <div class="w-px h-12 md:h-16 bg-white/20"></div>
+        </div>
+    </section>
 
-                <div class="grid grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <div class="stack">REACT</div>
-                <div class="stack">NEXT.JS</div>
-                <div class="stack">HTML</div>
-                <div class="stack">CSS</div>
-                <div class="stack">TAILWIND CSS</div>
-                <div class="stack">JAVASCRIPT</div>
-                </div>
-            </div>
-            </div>
-        </section>
+    <!-- STACKS -->
+    <section id="stacks" class="py-16 md:py-20 bg-white text-black overflow-hidden relative">
+        <div class="marquee-wrapper border-y border-black">
+            <div class="animate-marquee flex gap-10 md:gap-16 whitespace-nowrap">
+                <span class="marquee-text">REACT •</span>
+                <span class="marquee-text">NEXT.JS •</span>
+                <span class="marquee-text">HTML •</span>
+                <span class="marquee-text">CSS •</span>
+                <span class="marquee-text">JAVASCRIPT •</span>
+                <span class="marquee-text">TAILWIND •</span>
 
-        <section class="bg-black text-white py-24">
-            <div class="max-w-7xl mx-auto px-6">
+                <span class="marquee-text">REACT •</span>
+                <span class="marquee-text">NEXT.JS •</span>
+                <span class="marquee-text">HTML •</span>
+                <span class="marquee-text">CSS •</span>
+                <span class="marquee-text">JAVASCRIPT •</span>
+                <span class="marquee-text">TAILWIND •</span>
+            </div>
+        </div>
+        
+        <div class="px-6 mt-24 md:mt-40">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-20">
                 
-                <div class="mb-20">
-                    <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none">
-                        Featured<br>Works
+                <div>
+                    <h2 class="text-4xl sm:text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.95] md:leading-none mb-8 md:mb-10">
+                        DEVELOPMENT <br> STACK
                     </h2>
+                    <p class="max-w-md text-sm leading-relaxed opacity-60">
+                        Focado em transformar layouts complexos em código limpo, rápido e escalável.
+                        Minha missão é garantir que cada landing page performe como uma máquina.
+                    </p>
+                </div>
 
-                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-10">
-                        <p class="mt-10 max-w-md text-white/60 leading-relaxed">
-                            Projetos que misturam estratégia, design e código pra criar experiências digitais
-                            que vendem, encantam e funcionam no mundo real.
-                        </p>
+                <div class="grid grid-cols-2 gap-4 md:gap-6 max-w-xl md:max-w-4xl mx-auto md:mx-0">
+                    <div class="stack">REACT</div>
+                    <div class="stack">NEXT.JS</div>
+                    <div class="stack">HTML</div>
+                    <div class="stack">CSS</div>
+                    <div class="stack">TAILWIND CSS</div>
+                    <div class="stack">JAVASCRIPT</div>
+                </div>
 
-                        <div class="text-[10px] font-bold opacity-30 uppercase tracking-[0.5em]">
-                            01 — 04
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKS -->
+    <section class="bg-black text-white py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none">
+                    Featured<br>Works
+                </h2>
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 md:gap-10">
+                    <p class="mt-8 md:mt-10 max-w-md text-white/60 leading-relaxed">
+                        Projetos que misturam estratégia, design e código pra criar experiências digitais
+                        que vendem, encantam e funcionam no mundo real.
+                    </p>
+
+                    <div class="text-[10px] font-bold opacity-30 uppercase tracking-[0.5em]">
+                        01 — 04
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 md:gap-x-16 gap-y-20 md:gap-y-32">
+
+                <!-- CARD -->
+                <div class="group">
+                    <div class="relative aspect-[4/5] max-w-md md:max-w-none mx-auto bg-black overflow-hidden border border-white/5 transition-all duration-700 hover:border-white/20">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-[140px] sm:text-[160px] md:text-[220px] font-black italic select-none transition-all duration-500 text-white/[0.08] group-hover:scale-110">
+                                01
+                            </span>
+                        </div>
+                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                            <div class="w-20 h-20 md:w-24 md:h-24 bg-white text-black rounded-full flex items-center justify-center font-black text-[10px] md:text-[11px] tracking-[0.2em] uppercase opacity-0 scale-50 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100">
+                                BUILD
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 h-[2px] bg-white w-0 transition-all duration-700 group-hover:w-full"></div>
+                    </div>
+                    <div class="mt-8 md:mt-10 overflow-hidden max-w-md md:max-w-none mx-auto">
+                        <h4 class="text-3xl md:text-4xl font-black uppercase tracking-tighter transition-all duration-500 group-hover:translate-x-4">
+                            Project One
+                        </h4>
+                        <div class="flex items-center gap-4 mt-4 transition-all duration-500 group-hover:translate-x-4">
+                            <div class="h-px w-8 bg-white/20"></div>
+                            <p class="text-[10px] uppercase tracking-[0.3em] font-bold opacity-40">Branding</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-32">
-
-                    <div class="group">
-                        <div class="relative aspect-[4/5] bg-black overflow-hidden border border-white/5 transition-all duration-700 hover:border-white/20">
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <span class="text-[180px] md:text-[220px] font-black italic select-none transition-all duration-500 text-white/[0.08] group-hover:text-white/[0.08] group-hover:scale-110">
-                                    01
-                                </span>
-                            </div>
-                            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                <div class="w-24 h-24 bg-white text-black rounded-full flex items-center justify-center font-black text-[11px] tracking-[0.2em] uppercase opacity-0 scale-50 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100">
-                                    BUILD
-                                </div>
-                            </div>
-                            <div class="absolute bottom-0 left-0 h-[2px] bg-white w-0 transition-all duration-700 group-hover:w-full"></div>
-                        </div>
-                        <div class="mt-10 overflow-hidden">
-                            <h4 class="text-4xl font-black uppercase tracking-tighter transition-all duration-500 group-hover:translate-x-4">Project One</h4>
-                            <div class="flex items-center gap-4 mt-4 transition-all duration-500 group-hover:translate-x-4">
-                                <div class="h-px w-8 bg-white/20"></div>
-                                <p class="text-[10px] uppercase tracking-[0.3em] font-bold opacity-40">Branding</p>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="group">
                         <div class="relative aspect-[4/5] bg-black overflow-hidden border border-white/5 transition-all duration-700 hover:border-white/20">
@@ -183,22 +198,24 @@
                     </div>
 
                 </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <script>
-            const stacks = document.querySelectorAll('.stack');
-            let i = 0;
+    <script>
+        const stacks = document.querySelectorAll('.stack');
+        let i = 0;
 
-            function rotateStacks(){
+        function rotateStacks(){
             stacks.forEach(el => el.classList.remove('active'));
             stacks[i].classList.add('active');
             i = (i + 1) % stacks.length;
-            }
+        }
 
-            rotateStacks();                 // ativa primeira
-            setInterval(rotateStacks, 1200); // troca a cada 1.2s
+        rotateStacks();
+        setInterval(rotateStacks, 1200);
+    </script>
 
-        </script>
 </body>
 </html>
