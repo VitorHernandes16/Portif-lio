@@ -204,27 +204,34 @@
     </section>
 
     <script>
-        const cards = document.querySelectorAll('.group');
+        const stacks = document.querySelectorAll('.stack');
+        let i = 0;
 
-        function clearActive() {
-            cards.forEach(card => card.classList.remove('active'));
+        function rotateStacks(){
+            stacks.forEach(el => el.classList.remove('active'));
+            stacks[i].classList.add('active');
+            i = (i + 1) % stacks.length;
         }
 
-        cards.forEach(card => {
-            card.addEventListener('click', (e) => {
-                const isActive = card.classList.contains('active');
-                
-                clearActive();
-                
-                if (!isActive) {
-                    card.classList.add('active');
-                }
-                
-                e.stopPropagation();
-            });
-        });
+        rotateStacks();
+        setInterval(rotateStacks, 1200);
 
-        document.addEventListener('click', clearActive);
+            const cards = document.querySelectorAll('.group');
+
+    function clearActive() {
+        cards.forEach(card => card.classList.remove('active'));
+    }
+
+    cards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            const isActive = card.classList.contains('active');
+            clearActive();
+            if (!isActive) card.classList.add('active');
+            e.stopPropagation();
+        });
+    });
+
+    document.addEventListener('click', clearActive);
     </script>
 
 </body>
